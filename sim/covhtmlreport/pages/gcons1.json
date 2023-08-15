@@ -1,0 +1,19 @@
+var g_db_data = [
+{dummy:0},
+{name:'APB_accesses_cg',f:1,type:6,id:195,tb:'8',h:'5',m:'3',hp:'62.50%',cov:['66.66%','Y'],g:'100.00%',gp:['66.66%','Y'],hdlPath:'/uart_tb/APB_PROTOCOL_MONITOR',parent:'178'},
+{name:'APB_accesses_cg',f:1,type:6,id:195,tb:'8',h:'5',m:'3',hp:'62.50%',cov:['66.66%','Y'],g:'100.00%',gp:['66.66%','Y'],hdlPath:'/uart_tb/APB_PROTOCOL_MONITOR',parent:'178'},
+{name:'modem_lines_cg',f:1,type:6,id:1092,tb:'272',h:'272',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/modem_agent_pkg/modem_coverage_monitor',parent:'1091'},
+{name:'tx_word_format_int_cg',f:1,type:6,id:1121,tb:'51',h:'51',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'rx_word_format_int_cg',f:1,type:6,id:1131,tb:'175',h:'69',m:'106',hp:'39.42%',cov:['86.75%','Y'],g:'100.00%',gp:['86.75%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'int_enable_cg',f:1,type:6,id:1143,tb:'15',h:'4',m:'11',hp:'26.66%',cov:['26.66%','R'],g:'100.00%',gp:['26.66%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'int_enable_src_cg',f:1,type:6,id:1147,tb:'60',h:'12',m:'48',hp:'20.00%',cov:['33.05%','R'],g:'100.00%',gp:['33.05%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'modem_int_src_cg',f:1,type:6,id:1155,tb:'14',h:'9',m:'5',hp:'64.28%',cov:['66.66%','Y'],g:'100.00%',gp:['66.66%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'lsr_int_src_cg',f:1,type:6,id:1163,tb:'9',h:'0',m:'9',hp:'0.00%',cov:['0.00%','R'],g:'100.00%',gp:['0.00%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_interrupt_coverage_monitor',parent:'1120'},
+{name:'tx_word_format_cg',f:1,type:6,id:1168,tb:'51',h:'51',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_tx_coverage_monitor',parent:'1167'},
+{name:'rx_word_format_cg',f:1,type:6,id:1179,tb:'51',h:'51',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_rx_coverage_monitor',parent:'1178'},
+{name:'mcr_settings_cg',f:1,type:6,id:1190,tb:'42',h:'42',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_modem_coverage_monitor',parent:'1189'},
+{name:'msr_inputs_cg',f:1,type:6,id:1204,tb:'530',h:'351',m:'179',hp:'66.22%',cov:['96.50%','G'],g:'100.00%',gp:['96.50%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_modem_coverage_monitor',parent:'1189'},
+{name:'baud_rate_cg',f:1,type:6,id:1227,tb:'35',h:'35',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/baud_rate_checker',parent:'1226'},
+{name:'reg_access_cg',f:1,type:6,id:1230,tb:'27',h:'27',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_reg_access_coverage_monitor',parent:'1229'},
+{name:'lsr_read_cg',f:1,type:6,id:1238,tb:'22',h:'12',m:'10',hp:'54.54%',cov:['68.45%','Y'],g:'100.00%',gp:['68.45%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/uart_env_pkg/uart_reg_access_coverage_monitor',parent:'1229'}];
+processConsCovergroupsData(g_db_data);

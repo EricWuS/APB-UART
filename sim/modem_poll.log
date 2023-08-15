@@ -1,0 +1,549 @@
+# vsim uart_tb "+UVM_TESTNAME=modem_poll_test" -do "coverage save modem_poll.ucdb -onexit;run -all" -l modem_poll.log -c -coverage 
+# Start time: 16:26:48 on Aug 13,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.modem_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_reg_pkg(fast)
+# Loading work.modem_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.host_if_seq_pkg(fast)
+# Loading work.uart_vseq_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.serial_if(fast)
+# Loading work.interrupt_if(fast)
+# Loading work.uart_tb(fast)
+# Loading work.uart_16550(fast)
+# Loading work.apb_monitor(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/icTools/qsim10.6setupFiles/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save modem_poll.ucdb -onexit
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test modem_poll_test...
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 25995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 25995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 26395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 26395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 26445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 26445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 26545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 26545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 26845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 26845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 26995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 26995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 27995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 27995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 28995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 28995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 29895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 29895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 30995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 30995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 31895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 31895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 32995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 32995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 33995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 33995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 34995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 34995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 35995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 35995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 36995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 36995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 37845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 37845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 38995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 38995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 39045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 39045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 39195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 39195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 39295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 39295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 39445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 39445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 39845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 39845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 40995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 40995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 41945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 41945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 42495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 42495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 42595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 42595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 42845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 42845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 42995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 42995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 43845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 43845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 44995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 44995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 45895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 45895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46195: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46195: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46445: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46445: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46545: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46545: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 46795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 46795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47145: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47145: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 47995: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 47995: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48045: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48045: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48095: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48095: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48295: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48295: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48395: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48395: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48745: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48745: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48845: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48845: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 48895: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 48895: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49245: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49245: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49345: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49345: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49495: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49495: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49595: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49595: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49645: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49645: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49695: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49695: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49795: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49795: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(180) @ 49945: uvm_test_top.m_env.modem_sb [monitor_modem] DTR output does not match MCR value: 0 cf 1
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(184) @ 49945: uvm_test_top.m_env.modem_sb [monitor_modem] RTS output does not match MCR value: 1 cf 0
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 50035: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 50035: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
+# UVM_ERROR ../uvm_tb/env/uart_modem_scoreboard.svh(215) @ 50035: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] 460 modem control errors occurred during 500 MSR writes
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(156) @ 50035: uvm_test_top.m_env.rx_sb [report_phase] 0 characters received by the UART with 0 inserted errors
+# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 50035: uvm_test_top.m_env.tx_sb [report_phase] 0 characters transmitted from the UART with no errors
+# UVM_ERROR ../uvm_tb/tests/modem_poll_test.svh(53) @ 50035: uvm_test_top [*** UVM TEST FAILED ***] 460 modem control errors occurred during 500 MSR writes
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    7
+# UVM_WARNING :    0
+# UVM_ERROR :  462
+# UVM_FATAL :    0
+# ** Report counts by id
+# [*** UVM TEST FAILED ***]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [monitor_modem]   460
+# [report_phase]     3
+# [uart_modem_scoreboard::report_phase]     1
+# ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 50035 ns  Iteration: 67  Instance: /uart_tb
+# Saving coverage database on exit...
+# End time: 16:26:56 on Aug 13,2023, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
