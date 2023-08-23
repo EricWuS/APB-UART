@@ -1,6 +1,6 @@
-# vsim uart_tb "+UVM_TESTNAME=rx_errors_int_test" -do "coverage save rx_errors_int.ucdb -onexit;run -all" -l rx_errors_int.log -voptargs="+acc" 
-# Start time: 16:30:10 on Aug 13,2023
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim -sv_seed random uart_tb "+UVM_TESTNAME=rx_errors_int_test" -do "coverage save rx_errors_int.ucdb -onexit;run -all" -l rx_errors_int.log -voptargs="+acc" 
+# Start time: 15:55:27 on Aug 23,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
 # //
@@ -44,6 +44,7 @@
 # Loading work.apb_monitor(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading D:/icTools/qsim10.6setupFiles/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 3916910582
 # coverage save rx_errors_int.ucdb -onexit
 # run -all
 # ----------------------------------------------------------------
@@ -69,159 +70,23 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test rx_errors_int_test...
-# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:2
-# no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:2
+# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:3
+# no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:3
 # no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:3
-# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:4
-# no_rx_chars:2 rx_fifo_threshold:14 no_tx_chars:4
-# no_rx_chars:2 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:12 rx_fifo_threshold:8 no_tx_chars:4
-# no_rx_chars:4 rx_fifo_threshold:8 no_tx_chars:4
-# no_rx_chars:4 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:12 rx_fifo_threshold:4 no_tx_chars:3
-# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:3
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:3
-# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:3
-# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:2
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 149460: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 165165: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:4
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 165165: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:1 LCR:4
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:2
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
@@ -230,10 +95,91 @@
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:2
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:2
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:2
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 459255: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:a
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 1.
+#    Time: 459305 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 462295: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 2.
+#    Time: 462345 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 465335: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 3.
+#    Time: 466265 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 517295: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:b
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:8
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:18
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 710685: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:f
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:2
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 710735 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 4.
+#    Time: 710785 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 714045: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:f
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:2
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 714050: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 714105 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:2
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:3
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:3
 # no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:3
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:3
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:3
@@ -242,169 +188,373 @@
 # no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:3
 # no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:3
 # no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:4
-# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:4
-# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:22 rx_fifo_threshold:14 no_tx_chars:2
-# no_rx_chars:8 rx_fifo_threshold:14 no_tx_chars:2
-# no_rx_chars:8 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:2
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:2
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:2
-# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:2
-# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:2
-# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:14 rx_fifo_threshold:14 no_tx_chars:2
 # no_rx_chars:0 rx_fifo_threshold:14 no_tx_chars:2
 # no_rx_chars:0 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
 # no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1187755: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 6.
+#    Time: 1187805 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1194115: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 7.
+#    Time: 1194165 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:22 rx_fifo_threshold:14 no_tx_chars:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251055: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251105: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251155: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:1b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251205: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:1b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251305: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:1b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1251605: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:1b
+# no_rx_chars:8 rx_fifo_threshold:14 no_tx_chars:2
+# no_rx_chars:8 rx_fifo_threshold:14 no_tx_chars:2
+# no_rx_chars:8 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:4
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1323435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:1c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1323435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:16 LCR:1c
+# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
 # no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:4
 # no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:4
 # no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:3
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:3
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1474545: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 8.
+#    Time: 1474595 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1477360: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1477585: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1477585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:45 LCR:1e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 9.
+#    Time: 1477635 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 1477635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:0 actual:1
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1477635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1540245: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:20
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1569595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1913890: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1918415: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1918465: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:2b
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:3
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:3
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:1
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2233635: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:33
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2233685: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:33
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2258575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
 # no_rx_chars:16 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2458260: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2464625: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2464625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:22 LCR:39
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:17
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2484335: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3a
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2658685: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:3d
+# no_rx_chars:1 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:4
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2735845: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3f
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2765945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2824545: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2824595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:2a LCR:41
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2824645: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2824645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:18 LCR:41
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2824695: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2824695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:24 LCR:41
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2824745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2827455: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2827455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:c LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2827505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2830355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:26 actual:16 LCR:41
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2831390: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2833115: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2833115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:24 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2833165: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2837330: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2843110: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3e actual:55 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2857775: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:75 actual:6d LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2857825: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:64 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2857875: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:72 actual:3b LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2857925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:5e LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2857975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7b actual:7f LCR:42
+# no_rx_chars:1 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:17 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3066215: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:47
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:3
-# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:3
-# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:1
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
@@ -416,39 +566,383 @@
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
 # no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
-# no_rx_chars:4 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3430095: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:50
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 10.
+#    Time: 3430145 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3431875: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:50
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 11.
+#    Time: 3431925 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3436135: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:50
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 12.
+#    Time: 3436185 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3438195: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:50
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 13.
+#    Time: 3438245 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3440395: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:50
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 14.
+#    Time: 3440445 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 15.
+#    Time: 3444425 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 3444425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:4
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3486485: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 3486535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:6
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:1
+# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:21 rx_fifo_threshold:14 no_tx_chars:4
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:4
+# no_rx_chars:7 rx_fifo_threshold:14 no_tx_chars:0
 # no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:9 rx_fifo_threshold:8 no_tx_chars:0
 # no_rx_chars:1 rx_fifo_threshold:8 no_tx_chars:0
-# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 2963025: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 2963025: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
-# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 2963025: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
-# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(156) @ 2963025: uvm_test_top.m_env.rx_sb [report_phase] 713 characters received by the UART with 0 inserted errors
-# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 2963025: uvm_test_top.m_env.tx_sb [report_phase] 726 characters transmitted from the UART with no errors
+# no_rx_chars:8 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4021215: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5d
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4024775: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:5d
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 16.
+#    Time: 4024825 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 4034890: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:18 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4079925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4079925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2c actual:36 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080175: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080225: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080275: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080325: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080375: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4080425: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4080475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:18 LCR:5e
+# no_rx_chars:4 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:4
+# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:4
+# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4289665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6a actual:75 LCR:62
+# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:19 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:20 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 4381600: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4398875: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:64
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4398925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:64
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4398975: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:64
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4399025: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:64
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4399075: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:64
+# no_rx_chars:6 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4423835: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:65
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:16 rx_fifo_threshold:14 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4484725: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:66
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4484775: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:66
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4484825: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:66
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4484875: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:66
+# no_rx_chars:2 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:15
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:1
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:1
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:19
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:0 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:-4 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:-4 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:12 rx_fifo_threshold:8 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:8 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:3
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:8 no_tx_chars:3
+# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:3
+# no_rx_chars:0 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:15 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:1
+# no_rx_chars:7 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:14 rx_fifo_threshold:14 no_tx_chars:0
+# no_rx_chars:13 rx_fifo_threshold:8 no_tx_chars:2
+# no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:2
+# no_rx_chars:5 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:10 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5310225: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:79
+# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5310275 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 17.
+#    Time: 5310325 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:9 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5312945: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:79
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5313005 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:8 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5315665: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5315665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:3 LCR:79
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5315725 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 19.
+#    Time: 5315765 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5321825: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:79
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 20.
+#    Time: 5321925 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5324455 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5324545: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:79
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 21.
+#    Time: 5324645 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5327335 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5327425: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:79
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 22.
+#    Time: 5327525 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5330055 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5330145: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:79
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 23.
+#    Time: 5330245 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5332775 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 5340730: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5340785: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:7a
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5340835 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 24.
+#    Time: 5340885 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5344205: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7a
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5344265 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 25.
+#    Time: 5344305 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5347425: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:7a
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# ** Error (suppressible): (vsim-12030) Covergroup Builtin function call 'sample' is ignored as the covergroup object of type '/uart_env_pkg::uart_interrupt_coverage_monitor::#rx_status_word_format_int_cg#' is not constructed.
+#    Time: 5347485 ns  Iteration: 2  Region: /uart_env_pkg::uart_interrupt_coverage_monitor::run_phase
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 26.
+#    Time: 5347525 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5353645: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 27.
+#    Time: 5355565 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# no_rx_chars:11 rx_fifo_threshold:8 no_tx_chars:3
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5416795: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7b
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:3
+# no_rx_chars:3 rx_fifo_threshold:8 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:16
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:12
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:0
+# no_rx_chars:11 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:3 rx_fifo_threshold:4 no_tx_chars:0
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:20
+# no_rx_chars:7 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:6 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:5 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:4 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:3 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:2 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:0 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:4
+# no_rx_chars:-1 rx_fifo_threshold:1 no_tx_chars:0
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 5676235: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 5676235: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
+# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 5676235: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(159) @ 5676235: uvm_test_top.m_env.rx_sb [report_phase] 10 characters received with undetected errors from 1301 received overall
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(162) @ 5676235: uvm_test_top.m_env.rx_sb [report_phase] 20 characters received with data_errors from 1301 received overall
+# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 5676235: uvm_test_top.m_env.tx_sb [report_phase] 1480 characters transmitted from the UART with no errors
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :    8
-# UVM_WARNING :    0
-# UVM_ERROR :    0
+# UVM_INFO :   81
+# UVM_WARNING :   11
+# UVM_ERROR :   32
 # UVM_FATAL :    0
 # ** Report counts by id
 # [Questa UVM]     2
 # [RNTST]     1
 # [TEST_DONE]     1
-# [report_phase]     3
+# [monitor_uart]   104
+# [report_phase]     4
+# [startBitErrorDetect]    11
 # [uart_modem_scoreboard::report_phase]     1
 # ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 2963025 ns  Iteration: 67  Instance: /uart_tb
+#    Time: 5676235 ns  Iteration: 67  Instance: /uart_tb
 # Saving coverage database on exit...
-# End time: 16:30:22 on Aug 13,2023, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 0
+# End time: 15:55:58 on Aug 23,2023, Elapsed time: 0:00:31
+# Errors: 37, Warnings: 0

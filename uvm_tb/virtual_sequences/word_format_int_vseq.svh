@@ -48,9 +48,10 @@ task body;
 
   // i = 0;
   // setup.randomize()进行对象setup里rand变量的随机化，并添加约束条件约束 LCR DIV的值。
-  repeat(64) begin
+  repeat(128) begin
     assert(setup.randomize() with {setup.LCR == lcr;
-                                   setup.DIV == divisor;});
+                                   setup.DIV == divisor;
+                                   setup.FCR == 2'b11;});
  
     setup.start(apb);
     ien.IER = 4'h3;     // 4'b0011 对rx tx 两个对应的FIFO中断使能
@@ -88,7 +89,7 @@ task body;
       rx_serial.start(uart);
     join
     wait_empty.start(apb);
-    // lcr = lcr + 1;
+    lcr = lcr + 1;
     // lcr = (lcr > 63) ? 0 : (lcr + 1);   
     // // $display("lcr: ", lcr);
     // i++;

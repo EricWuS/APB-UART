@@ -50,7 +50,7 @@ task body;
       3'b011: begin // 读取LSR寄存器的值
                 rm.LSR.read(status, data, .parent(this));
               end
-      3'b010: begin  // FIFO降至触发水平以下
+      3'b010: begin  // RX FIFO降至触发水平以下
                 for(int i = 0; i < rx_fifo_threshold; i++) begin
                   rm.RXD.read(status, data, .parent(this));
                   no_rx_chars--;
@@ -71,6 +71,12 @@ task body;
                     break;
                   end
                 end
+              end
+      3'b000: begin  // 读取modem status register
+                rm.MSR.read(status, data, .parent(this));
+              end
+      3'b110: begin // timeout: reading from the rxd
+                rm.RXD.read(status, data, .parent(this));
               end
     endcase
   end

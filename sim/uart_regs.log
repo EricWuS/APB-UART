@@ -1,5 +1,5 @@
 # vsim uart_tb "+UVM_TESTNAME=uart_test" -do "coverage save uart_regs.ucdb -onexit;run -all" -l uart_regs.log -c -voptargs="+acc" 
-# Start time: 16:28:30 on Aug 13,2023
+# Start time: 15:45:36 on Aug 21,2023
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
@@ -93,5 +93,5 @@
 # ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 1385 ns  Iteration: 67  Instance: /uart_tb
 # Saving coverage database on exit...
-# End time: 16:28:35 on Aug 13,2023, Elapsed time: 0:00:05
+# End time: 15:45:41 on Aug 21,2023, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0

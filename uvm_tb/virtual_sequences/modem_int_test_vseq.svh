@@ -34,8 +34,8 @@ task body;
   modem_isr_seq modem_isr = modem_isr_seq::type_id::create("modem_isr");
 
   // No loopback:
-  write_mcr.loopback = 0;
-  ien.IER = 4'h8;         // 使能modem中断
+  write_mcr.loopback = 1;
+  ien.IER = 4'ha;         // 使能modem中断
   ien.start(apb);
 
   fork
@@ -54,11 +54,12 @@ task body;
     write_mcr.start(apb);
   end
 
+  // 下面的写法 没法真正做到使loopback 从刚开始定义的0 变为 1
   // With loopback:
-  write_mcr.loopback = 1;
-  repeat(500) begin
-    write_mcr.start(apb);
-  end
+  // write_mcr.loopback = 1;
+  // repeat(500) begin
+  //   write_mcr.start(apb);
+  // end
 
 endtask: body
 

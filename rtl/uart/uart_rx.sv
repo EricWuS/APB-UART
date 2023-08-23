@@ -298,7 +298,7 @@ endproperty: rx_framing
 
 RX_FE_CHK: assert property(rx_framing);
 
-// 检测UART串口接收器是否接收到了BREAK信号（全0数据持续超过12个位时间）
+// 检测UART串口接收器是否接收到了BREAK信号（全0数据持续超过12个单位时间）
 property rx_break;
   @(posedge PCLK)
   $rose((rx_state == STOP2) && ~(|{filtered_rxd, rx_buffer})) |=> break_error;

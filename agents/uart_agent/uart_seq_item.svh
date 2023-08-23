@@ -30,7 +30,7 @@ class uart_seq_item extends uvm_sequence_item;
   rand bit pe;      // 奇偶校验错误（Parity Error）
   rand bit[15:0] baud_divisor;
 
-  constraint BR_DIVIDE {baud_divisor == 16'h02;}
+  constraint BR_DIVIDE {soft baud_divisor == 16'h02;}
 
   constraint error_dists {fe dist {1:= 1, 0:=99};
                           pe dist {1:= 1, 0:=99};
@@ -39,7 +39,7 @@ class uart_seq_item extends uvm_sequence_item;
   constraint clks {delay inside {[0:20]};
                   sbe_clks inside {[1:4]};}
 
-  constraint lcr_setup {lcr == 8'h3f;}
+  constraint lcr_setup {soft lcr == 8'h7f;}
 
   // Standard UVM Methods:
   extern function new(string name = "uart_seq_item");

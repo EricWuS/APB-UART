@@ -30,25 +30,33 @@ tb:
 sim_all: sim_word_format_poll sim_modem_poll sim_word_format_int sim_modem_int sim_baud_rate sim_rx_errors_int sim_uart_regs
 
 sim_word_format_poll:
-	vsim uart_tb +UVM_TESTNAME=word_format_poll_test -do "coverage save word_format_poll.ucdb -onexit;run -all" -c -l word_format_poll.log -coverage -voptargs=+acc
+	for i in 1; do \
+		vsim -sv_seed random uart_tb +UVM_TESTNAME=word_format_poll_test -do "coverage save word_format_poll_$${i}.ucdb -onexit;run -all" -c -l word_format_poll_$${i}.log -coverage -voptargs=+acc; \
+	done
 
 sim_modem_poll:
-	vsim uart_tb +UVM_TESTNAME=modem_poll_test -do "coverage save modem_poll.ucdb -onexit;run -all" -l modem_poll.log -c -coverage
+	vsim -sv_seed random uart_tb +UVM_TESTNAME=modem_poll_test -do "coverage save modem_poll.ucdb -onexit;run -all" -l modem_poll.log -c -coverage
 
 sim_word_format_int:
-	vsim uart_tb +UVM_TESTNAME=word_format_int_test -do "coverage save word_format_int.ucdb -onexit;run -all" -l word_format_int.log -c -coverage
+# vsim -sv_seed random uart_tb +UVM_TESTNAME=word_format_int_test -do "coverage save word_format_int.ucdb -onexit;run -all" -l word_format_int.log -c -coverage
+
+	for i in 6; do \
+		vsim -sv_seed random uart_tb +UVM_TESTNAME=word_format_int_test -do "coverage save word_format_int_$${i}.ucdb -onexit; run -all" -l word_format_int_$${i}.log -c -coverage; \
+	done
+
+
 
 sim_modem_int:
-	vsim uart_tb +UVM_TESTNAME=modem_int_test -do "coverage save modem_int.ucdb -onexit;run -all" -l modem_int.log -c -coverage
+	vsim -sv_seed random uart_tb +UVM_TESTNAME=modem_int_test -do "coverage save modem_int.ucdb -onexit;run -all" -l modem_int.log -c -coverage
 
 sim_baud_rate:
-	vsim uart_tb +UVM_TESTNAME=baud_rate_test -do "coverage save baud_rate.ucdb -onexit;run -all" -l baud_rate.log -c -coverage
+	vsim -sv_seed random uart_tb +UVM_TESTNAME=baud_rate_test -do "coverage save baud_rate.ucdb -onexit;run -all" -l baud_rate.log -c -coverage
 
 sim_rx_errors_int:
-	vsim uart_tb +UVM_TESTNAME=rx_errors_int_test -do "coverage save rx_errors_int.ucdb -onexit;run -all" -l rx_errors_int.log  -voptargs=+acc
+	vsim -sv_seed random uart_tb +UVM_TESTNAME=rx_errors_int_test -do "coverage save rx_errors_int.ucdb -onexit;run -all" -l rx_errors_int.log  -voptargs=+acc
 
 sim_uart_regs:
-	vsim uart_tb +UVM_TESTNAME=uart_test -do "coverage save uart_regs.ucdb -onexit;run -all" -l uart_regs.log -c -voptargs=+acc
+	vsim -sv_seed random uart_tb +UVM_TESTNAME=uart_test -do "coverage save uart_regs.ucdb -onexit;run -all" -l uart_regs.log -c -voptargs=+acc
 
 #	vsim uart_tb +UVM_TESTNAME=rx_errors_int_test -do "coverage save rx_errors_int.ucdb -onexit;run -all" -l rx_errors_int.log -c -coverage
 

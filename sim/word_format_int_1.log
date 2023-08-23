@@ -1,0 +1,189 @@
+# vsim -sv_seed random uart_tb "+UVM_TESTNAME=word_format_int_test" -do "coverage save word_format_int_1.ucdb -onexit; run -all" -l word_format_int_1.log -c -coverage 
+# Start time: 16:43:10 on Aug 21,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.modem_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_reg_pkg(fast)
+# Loading work.modem_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.host_if_seq_pkg(fast)
+# Loading work.uart_vseq_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.serial_if(fast)
+# Loading work.interrupt_if(fast)
+# Loading work.uart_tb(fast)
+# Loading work.uart_16550(fast)
+# Loading work.apb_monitor(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/icTools/qsim10.6setupFiles/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 2405722502
+# coverage save word_format_int_1.ucdb -onexit
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test word_format_int_test...
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 151935: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 603925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 606965: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 610005: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 1.
+#    Time: 610055 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 613185: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 2.
+#    Time: 615565 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 618215: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:f
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1177035: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1c
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1179435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:1c
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1181835: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:1c
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 3.
+#    Time: 1198265 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1298325: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:1e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 4.
+#    Time: 1298625 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1402345: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 5.
+#    Time: 1402645 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1404980: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1404995: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:22
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 6.
+#    Time: 1405045 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1408160: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1408315: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:22
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 7.
+#    Time: 1409455 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1529025: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:25
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1531425: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:25
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 8.
+#    Time: 1531475 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1533905: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:25
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1536085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2169585: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:37
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 9.
+#    Time: 2170465 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2280335: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2280435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:3a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2296895: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2304475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2332375: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2332475: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:3b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2353535: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:3b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2572085: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:40
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2574130: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2574165: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:40
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2652750: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2652885: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2655925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2659125: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2661845: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:42
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2909675: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:48
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 10.
+#    Time: 2910295 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2927645: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:49
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3210155: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:4e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 11.
+#    Time: 3210205 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3277445: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:51
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 12.
+#    Time: 3277495 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3279925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:51
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 13.
+#    Time: 3280665 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3369895: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:54
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 14.
+#    Time: 3370095 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 3735590: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3735725: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:5e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3863855: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:62
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3866575: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:62
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 15.
+#    Time: 3866625 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 3869220: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3869335: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:62
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 16.
+#    Time: 3870515 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3967195: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:65
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 17.
+#    Time: 3970675 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3971175: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:33 actual:3e LCR:66
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4069045: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:68
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 18.
+#    Time: 4069095 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4456925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:75
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4462105: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:75
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 4464410: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4464505: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:75
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4691135: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:7a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 19.
+#    Time: 4691185 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4694315: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7a
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 20.
+#    Time: 4694895 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4728945: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7b
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 4930715: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 4930715: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
+# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 4930715: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(159) @ 4930715: uvm_test_top.m_env.rx_sb [report_phase] 2 characters received with undetected errors from 769 received overall
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(162) @ 4930715: uvm_test_top.m_env.rx_sb [report_phase] 1 characters received with data_errors from 769 received overall
+# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 4930715: uvm_test_top.m_env.tx_sb [report_phase] 1480 characters transmitted from the UART with no errors
+# UVM_ERROR ../uvm_tb/tests/word_format_int_test.svh(48) @ 4930715: uvm_test_top [*** UVM TEST FAILED ***] RX or TX data errors detected - see scoreboard reports for more detail
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   54
+# UVM_WARNING :    7
+# UVM_ERROR :    6
+# UVM_FATAL :    0
+# ** Report counts by id
+# [*** UVM TEST FAILED ***]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [monitor_uart]    50
+# [report_phase]     4
+# [startBitErrorDetect]     7
+# [uart_modem_scoreboard::report_phase]     1
+# ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 4930715 ns  Iteration: 67  Instance: /uart_tb
+# Saving coverage database on exit...
+# End time: 16:43:38 on Aug 21,2023, Elapsed time: 0:00:28
+# Errors: 20, Warnings: 0

@@ -156,20 +156,20 @@ covergroup int_enable_cg() with function sample(bit[3:0] en);
   option.per_instance = 1;
 
   INT_SOURCE: coverpoint en {
-    bins rx_data_only = {4'b0001};
-    bins tx_data_only = {4'b0010};
-    bins rx_status_only = {4'b0100};
+    bins rx_data_only = {4'b0001};      // 仿真会滞留，但能覆盖该仓，会在仿真执行两三行的时候滞留在boud rate check处
+    bins tx_data_only = {4'b0010};      // 仿真会滞留，但能覆盖该仓，会在仿真执行两三行的时候滞留在boud rate check处
+    bins rx_status_only = {4'b0100};    // 会滞留在仿真一开始阶段
     bins modem_status_only = {4'b1000};
     bins rx_tx_data = {4'b0011};
-    bins rx_status_rx_data = {4'b0101};
-    bins rx_status_tx_data = {4'b0110};
-    bins rx_status_rx_tx_data = {4'b0111};
-    bins modem_status_rx_data = {4'b1001};
-    bins modem_status_tx_data = {4'b1010};
+    bins rx_status_rx_data = {4'b0101};   // 会滞留在仿真执行完一行后，apb_monitor 的 70行 但 能执行到3次，也即能覆盖该仓
+    bins rx_status_tx_data = {4'b0110};   // 仿真会滞留 但 能执行到3次，也即能覆盖该仓
+    bins rx_status_rx_tx_data = {4'b0111}; 
+    bins modem_status_rx_data = {4'b1001}; // 仿真会滞留 但 能执行到2次，也即能覆盖该仓
+    bins modem_status_tx_data = {4'b1010}; // 仿真会滞留 但 能执行到16次，也即能覆盖该仓
     bins modem_status_rx_tx_data = {4'b1011};
-    bins modem_status_rx_status = {4'b1100};
-    bins modem_status_rx_status_rx_data = {4'b1101};
-    bins modem_status_rx_status_tx_data = {4'b1110};
+    bins modem_status_rx_status = {4'b1100};   // 仿真会滞留
+    bins modem_status_rx_status_rx_data = {4'b1101};  // 仿真会滞留 但 能执行12次，也即能覆盖到该仓
+    bins modem_status_rx_status_tx_data = {4'b1110};  // 仿真会滞留 但 能执行3次，也能实现覆盖
     bins modem_status_rx_status_rx_tx_data = {4'b1111};
     illegal_bins no_enables = {0}; // If we get an interrupt with no enables its an error
   }

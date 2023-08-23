@@ -40,7 +40,7 @@ class uart_rx_seq extends uvm_sequence #(uart_seq_item);
       rx_char.baud_divisor = baud_divisor;
       rx_char.lcr = lcr;
       if(no_errors) begin
-        rx_char.fe = 0;
+        rx_char.fe = 1;
         rx_char.pe = 0;
         rx_char.sbe = 0;
       end

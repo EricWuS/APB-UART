@@ -38,7 +38,7 @@ task body;
     modem_seq.start(modem);
   join_none
 
-  repeat(500) begin
+  repeat(8000) begin
     randcase
       1: write_mcr.start(apb);  // 执行概率：1 / (1 + 1) = 50% 的概率随机执行
       1: read_msr.start(apb);
@@ -47,7 +47,7 @@ task body;
 
   // With loopback:
   write_mcr.loopback = 1;
-  repeat(500) begin
+  repeat(8000) begin
     randcase
       1: write_mcr.start(apb);
       1: read_msr.start(apb);

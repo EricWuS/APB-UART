@@ -22,6 +22,7 @@
 ../uvm_tb/sequences/uart_rx_seq.svh
 ../uvm_tb/sequences/uart_seq_pkg.sv
 ../uvm_tb/tb/uart_tb.sv
+../uvm_tb/virtual_sequences/modem_int_test_vseq.svh
 ../uvm_tb/virtual_sequences/rx_errors_int_vseq.svh
 ../uvm_tb/virtual_sequences/uart_vseq_pkg.sv
 ../uvm_tb/virtual_sequences/word_format_int_vseq.svh

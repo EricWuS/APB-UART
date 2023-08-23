@@ -1,208 +1,208 @@
 var g_data = {
-f25:{
-scopes:[{link:'z.htm?f=0&s=25',val:'work.uart_tx'}]
+f34:{
+scopes:[{link:'z.htm?f=0&s=34',val:'work.uart_tx'}]
 ,FSMs:[{dummy:0}
-,{anchor:'cvg116',items:[{c:'Y',p:'83.87',z:'tx_state'}
-,{cr:'c',s:'1',z:'IDLE',h:'1872',c:'g'}
-,{cr:'c',z:'IDLE -> START',h:'1852',c:'g'}
-,{cr:'c',s:'1',z:'START',h:'1852',c:'g'}
-,{cr:'c',z:'START -> BIT0',h:'1852',c:'g'}
+,{anchor:'cvg125',items:[{c:'Y',p:'83.87',z:'tx_state'}
+,{cr:'c',s:'1',z:'IDLE',h:'626470',c:'g'}
+,{cr:'c',z:'IDLE -> START',h:'625208',c:'g'}
+,{cr:'c',s:'1',z:'START',h:'625208',c:'g'}
+,{cr:'c',z:'START -> BIT0',h:'625208',c:'g'}
 ,{cr:'m',z:'START -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT0',h:'1852',c:'g'}
-,{cr:'c',z:'BIT0 -> BIT1',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT0',h:'625208',c:'g'}
+,{cr:'c',z:'BIT0 -> BIT1',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT0 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT1',h:'1852',c:'g'}
-,{cr:'c',z:'BIT1 -> BIT2',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT1',h:'625208',c:'g'}
+,{cr:'c',z:'BIT1 -> BIT2',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT2',h:'1852',c:'g'}
-,{cr:'c',z:'BIT2 -> BIT3',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT2',h:'625208',c:'g'}
+,{cr:'c',z:'BIT2 -> BIT3',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT2 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT3',h:'1852',c:'g'}
-,{cr:'c',z:'BIT3 -> BIT4',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT3',h:'625208',c:'g'}
+,{cr:'c',z:'BIT3 -> BIT4',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT3 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT4',h:'1852',c:'g'}
-,{cr:'c',z:'BIT4 -> STOP1',h:'1628',c:'g'}
-,{cr:'c',z:'BIT4 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT4 -> BIT5',h:'192',c:'g'}
+,{cr:'c',s:'1',z:'BIT4',h:'625208',c:'g'}
+,{cr:'c',z:'BIT4 -> STOP1',h:'266152',c:'g'}
+,{cr:'c',z:'BIT4 -> PARITY',h:'51912',c:'g'}
+,{cr:'c',z:'BIT4 -> BIT5',h:'307144',c:'g'}
 ,{cr:'m',z:'BIT4 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP1',h:'1852',c:'g'}
-,{cr:'c',z:'STOP1 -> IDLE',h:'1724',c:'g'}
-,{cr:'c',z:'STOP1 -> STOP2',h:'128',c:'g'}
-,{cr:'c',s:'1',z:'PARITY',h:'128',c:'g'}
-,{cr:'c',z:'PARITY -> STOP1',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'STOP1',h:'625208',c:'g'}
+,{cr:'c',z:'STOP1 -> IDLE',h:'421460',c:'g'}
+,{cr:'c',z:'STOP1 -> STOP2',h:'203748',c:'g'}
+,{cr:'c',s:'1',z:'PARITY',h:'204418',c:'g'}
+,{cr:'c',z:'PARITY -> STOP1',h:'204418',c:'g'}
 ,{cr:'m',z:'PARITY -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT5',h:'192',c:'g'}
-,{cr:'c',z:'BIT5 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> BIT6',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'BIT5',h:'307144',c:'g'}
+,{cr:'c',z:'BIT5 -> STOP1',h:'51130',c:'g'}
+,{cr:'c',z:'BIT5 -> PARITY',h:'49425',c:'g'}
+,{cr:'c',z:'BIT5 -> BIT6',h:'206589',c:'g'}
 ,{cr:'m',z:'BIT5 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT6',h:'128',c:'g'}
-,{cr:'c',z:'BIT6 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> BIT7',h:'64',c:'g'}
+,{cr:'c',s:'1',z:'BIT6',h:'206589',c:'g'}
+,{cr:'c',z:'BIT6 -> STOP1',h:'54919',c:'g'}
+,{cr:'c',z:'BIT6 -> PARITY',h:'52586',c:'g'}
+,{cr:'c',z:'BIT6 -> BIT7',h:'99084',c:'g'}
 ,{cr:'m',z:'BIT6 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT7',h:'64',c:'g'}
-,{cr:'c',z:'BIT7 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT7 -> PARITY',h:'32',c:'g'}
+,{cr:'c',s:'1',z:'BIT7',h:'99084',c:'g'}
+,{cr:'c',z:'BIT7 -> STOP1',h:'48589',c:'g'}
+,{cr:'c',z:'BIT7 -> PARITY',h:'50495',c:'g'}
 ,{cr:'m',z:'BIT7 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP2',h:'128',c:'g'}
-,{cr:'c',z:'STOP2 -> IDLE',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'STOP2',h:'203748',c:'g'}
+,{cr:'c',z:'STOP2 -> IDLE',h:'203748',c:'g'}
 ]}
 
 ],
 },
-f79:{
-scopes:[{s:'31',b:'1',val:'uart_tb'},{s:'39',b:'1',val:'DUT'},{link:'z.htm?f=0&s=79',val:'tx_channel'}]
+f88:{
+scopes:[{s:'40',b:'1',val:'uart_tb'},{s:'48',b:'1',val:'DUT'},{link:'z.htm?f=0&s=88',val:'tx_channel'}]
 ,FSMs:[{dummy:0}
-,{anchor:'cvg116',items:[{c:'Y',p:'83.87',z:'tx_state'}
-,{cr:'c',s:'1',z:'IDLE',h:'1872',c:'g'}
-,{cr:'c',z:'IDLE -> START',h:'1852',c:'g'}
-,{cr:'c',s:'1',z:'START',h:'1852',c:'g'}
-,{cr:'c',z:'START -> BIT0',h:'1852',c:'g'}
+,{anchor:'cvg125',items:[{c:'Y',p:'83.87',z:'tx_state'}
+,{cr:'c',s:'1',z:'IDLE',h:'626470',c:'g'}
+,{cr:'c',z:'IDLE -> START',h:'625208',c:'g'}
+,{cr:'c',s:'1',z:'START',h:'625208',c:'g'}
+,{cr:'c',z:'START -> BIT0',h:'625208',c:'g'}
 ,{cr:'m',z:'START -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT0',h:'1852',c:'g'}
-,{cr:'c',z:'BIT0 -> BIT1',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT0',h:'625208',c:'g'}
+,{cr:'c',z:'BIT0 -> BIT1',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT0 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT1',h:'1852',c:'g'}
-,{cr:'c',z:'BIT1 -> BIT2',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT1',h:'625208',c:'g'}
+,{cr:'c',z:'BIT1 -> BIT2',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT2',h:'1852',c:'g'}
-,{cr:'c',z:'BIT2 -> BIT3',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT2',h:'625208',c:'g'}
+,{cr:'c',z:'BIT2 -> BIT3',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT2 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT3',h:'1852',c:'g'}
-,{cr:'c',z:'BIT3 -> BIT4',h:'1852',c:'g'}
+,{cr:'c',s:'1',z:'BIT3',h:'625208',c:'g'}
+,{cr:'c',z:'BIT3 -> BIT4',h:'625208',c:'g'}
 ,{cr:'m',z:'BIT3 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT4',h:'1852',c:'g'}
-,{cr:'c',z:'BIT4 -> STOP1',h:'1628',c:'g'}
-,{cr:'c',z:'BIT4 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT4 -> BIT5',h:'192',c:'g'}
+,{cr:'c',s:'1',z:'BIT4',h:'625208',c:'g'}
+,{cr:'c',z:'BIT4 -> STOP1',h:'266152',c:'g'}
+,{cr:'c',z:'BIT4 -> PARITY',h:'51912',c:'g'}
+,{cr:'c',z:'BIT4 -> BIT5',h:'307144',c:'g'}
 ,{cr:'m',z:'BIT4 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP1',h:'1852',c:'g'}
-,{cr:'c',z:'STOP1 -> IDLE',h:'1724',c:'g'}
-,{cr:'c',z:'STOP1 -> STOP2',h:'128',c:'g'}
-,{cr:'c',s:'1',z:'PARITY',h:'128',c:'g'}
-,{cr:'c',z:'PARITY -> STOP1',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'STOP1',h:'625208',c:'g'}
+,{cr:'c',z:'STOP1 -> IDLE',h:'421460',c:'g'}
+,{cr:'c',z:'STOP1 -> STOP2',h:'203748',c:'g'}
+,{cr:'c',s:'1',z:'PARITY',h:'204418',c:'g'}
+,{cr:'c',z:'PARITY -> STOP1',h:'204418',c:'g'}
 ,{cr:'m',z:'PARITY -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT5',h:'192',c:'g'}
-,{cr:'c',z:'BIT5 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> BIT6',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'BIT5',h:'307144',c:'g'}
+,{cr:'c',z:'BIT5 -> STOP1',h:'51130',c:'g'}
+,{cr:'c',z:'BIT5 -> PARITY',h:'49425',c:'g'}
+,{cr:'c',z:'BIT5 -> BIT6',h:'206589',c:'g'}
 ,{cr:'m',z:'BIT5 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT6',h:'128',c:'g'}
-,{cr:'c',z:'BIT6 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> BIT7',h:'64',c:'g'}
+,{cr:'c',s:'1',z:'BIT6',h:'206589',c:'g'}
+,{cr:'c',z:'BIT6 -> STOP1',h:'54919',c:'g'}
+,{cr:'c',z:'BIT6 -> PARITY',h:'52586',c:'g'}
+,{cr:'c',z:'BIT6 -> BIT7',h:'99084',c:'g'}
 ,{cr:'m',z:'BIT6 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT7',h:'64',c:'g'}
-,{cr:'c',z:'BIT7 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT7 -> PARITY',h:'32',c:'g'}
+,{cr:'c',s:'1',z:'BIT7',h:'99084',c:'g'}
+,{cr:'c',z:'BIT7 -> STOP1',h:'48589',c:'g'}
+,{cr:'c',z:'BIT7 -> PARITY',h:'50495',c:'g'}
 ,{cr:'m',z:'BIT7 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP2',h:'128',c:'g'}
-,{cr:'c',z:'STOP2 -> IDLE',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'STOP2',h:'203748',c:'g'}
+,{cr:'c',z:'STOP2 -> IDLE',h:'203748',c:'g'}
 ]}
 
 ],
 },
-f27:{
-scopes:[{link:'z.htm?f=0&s=27',val:'work.uart_rx'}]
+f36:{
+scopes:[{link:'z.htm?f=0&s=36',val:'work.uart_rx'}]
 ,FSMs:[{dummy:0}
-,{anchor:'cvg166',items:[{c:'Y',p:'83.87',z:'rx_state'}
-,{cr:'c',s:'1',z:'IDLE',h:'1756',c:'g'}
-,{cr:'c',z:'IDLE -> START',h:'1736',c:'g'}
-,{cr:'c',s:'1',z:'START',h:'1736',c:'g'}
-,{cr:'c',z:'START -> IDLE',h:'46',c:'g'}
-,{cr:'c',z:'START -> BIT0',h:'1690',c:'g'}
-,{cr:'c',s:'1',z:'BIT0',h:'1690',c:'g'}
-,{cr:'c',z:'BIT0 -> BIT1',h:'1690',c:'g'}
+,{anchor:'cvg175',items:[{c:'Y',p:'83.87',z:'rx_state'}
+,{cr:'c',s:'1',z:'IDLE',h:'578520',c:'g'}
+,{cr:'c',z:'IDLE -> START',h:'577359',c:'g'}
+,{cr:'c',s:'1',z:'START',h:'577359',c:'g'}
+,{cr:'c',z:'START -> IDLE',h:'8289',c:'g'}
+,{cr:'c',z:'START -> BIT0',h:'569070',c:'g'}
+,{cr:'c',s:'1',z:'BIT0',h:'569070',c:'g'}
+,{cr:'c',z:'BIT0 -> BIT1',h:'569070',c:'g'}
 ,{cr:'m',z:'BIT0 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT1',h:'1690',c:'g'}
-,{cr:'c',z:'BIT1 -> BIT2',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT1',h:'569070',c:'g'}
+,{cr:'c',z:'BIT1 -> BIT2',h:'569069',c:'g'}
 ,{cr:'m',z:'BIT1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT2',h:'1690',c:'g'}
-,{cr:'c',z:'BIT2 -> BIT3',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT2',h:'569069',c:'g'}
+,{cr:'c',z:'BIT2 -> BIT3',h:'569067',c:'g'}
 ,{cr:'m',z:'BIT2 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT3',h:'1690',c:'g'}
-,{cr:'c',z:'BIT3 -> BIT4',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT3',h:'569067',c:'g'}
+,{cr:'c',z:'BIT3 -> BIT4',h:'569067',c:'g'}
 ,{cr:'m',z:'BIT3 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT4',h:'1690',c:'g'}
-,{cr:'c',z:'BIT4 -> STOP1',h:'1466',c:'g'}
-,{cr:'c',z:'BIT4 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT4 -> BIT5',h:'192',c:'g'}
+,{cr:'c',s:'1',z:'BIT4',h:'569067',c:'g'}
+,{cr:'c',z:'BIT4 -> STOP1',h:'260887',c:'g'}
+,{cr:'c',z:'BIT4 -> PARITY',h:'42502',c:'g'}
+,{cr:'c',z:'BIT4 -> BIT5',h:'265676',c:'g'}
 ,{cr:'m',z:'BIT4 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP1',h:'1690',c:'g'}
-,{cr:'c',z:'STOP1 -> STOP2',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'STOP1',h:'569019',c:'g'}
+,{cr:'c',z:'STOP1 -> STOP2',h:'568969',c:'g'}
 ,{cr:'m',z:'STOP1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'PARITY',h:'128',c:'g'}
-,{cr:'c',z:'PARITY -> STOP1',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'PARITY',h:'176014',c:'g'}
+,{cr:'c',z:'PARITY -> STOP1',h:'176013',c:'g'}
 ,{cr:'m',z:'PARITY -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT5',h:'192',c:'g'}
-,{cr:'c',z:'BIT5 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> BIT6',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'BIT5',h:'265676',c:'g'}
+,{cr:'c',z:'BIT5 -> STOP1',h:'44209',c:'g'}
+,{cr:'c',z:'BIT5 -> PARITY',h:'45913',c:'g'}
+,{cr:'c',z:'BIT5 -> BIT6',h:'175509',c:'g'}
 ,{cr:'m',z:'BIT5 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT6',h:'128',c:'g'}
-,{cr:'c',z:'BIT6 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> BIT7',h:'64',c:'g'}
+,{cr:'c',s:'1',z:'BIT6',h:'175509',c:'g'}
+,{cr:'c',z:'BIT6 -> STOP1',h:'43725',c:'g'}
+,{cr:'c',z:'BIT6 -> PARITY',h:'45143',c:'g'}
+,{cr:'c',z:'BIT6 -> BIT7',h:'86641',c:'g'}
 ,{cr:'m',z:'BIT6 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT7',h:'64',c:'g'}
-,{cr:'c',z:'BIT7 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT7 -> PARITY',h:'32',c:'g'}
+,{cr:'c',s:'1',z:'BIT7',h:'86641',c:'g'}
+,{cr:'c',z:'BIT7 -> STOP1',h:'44185',c:'g'}
+,{cr:'c',z:'BIT7 -> PARITY',h:'42456',c:'g'}
 ,{cr:'m',z:'BIT7 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP2',h:'1690',c:'g'}
-,{cr:'c',z:'STOP2 -> IDLE',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'STOP2',h:'568969',c:'g'}
+,{cr:'c',z:'STOP2 -> IDLE',h:'568969',c:'g'}
 ]}
 
 ],
 },
-f128:{
-scopes:[{s:'31',b:'1',val:'uart_tb'},{s:'39',b:'1',val:'DUT'},{link:'z.htm?f=0&s=128',val:'rx_channel'}]
+f137:{
+scopes:[{s:'40',b:'1',val:'uart_tb'},{s:'48',b:'1',val:'DUT'},{link:'z.htm?f=0&s=137',val:'rx_channel'}]
 ,FSMs:[{dummy:0}
-,{anchor:'cvg166',items:[{c:'Y',p:'83.87',z:'rx_state'}
-,{cr:'c',s:'1',z:'IDLE',h:'1756',c:'g'}
-,{cr:'c',z:'IDLE -> START',h:'1736',c:'g'}
-,{cr:'c',s:'1',z:'START',h:'1736',c:'g'}
-,{cr:'c',z:'START -> IDLE',h:'46',c:'g'}
-,{cr:'c',z:'START -> BIT0',h:'1690',c:'g'}
-,{cr:'c',s:'1',z:'BIT0',h:'1690',c:'g'}
-,{cr:'c',z:'BIT0 -> BIT1',h:'1690',c:'g'}
+,{anchor:'cvg175',items:[{c:'Y',p:'83.87',z:'rx_state'}
+,{cr:'c',s:'1',z:'IDLE',h:'578520',c:'g'}
+,{cr:'c',z:'IDLE -> START',h:'577359',c:'g'}
+,{cr:'c',s:'1',z:'START',h:'577359',c:'g'}
+,{cr:'c',z:'START -> IDLE',h:'8289',c:'g'}
+,{cr:'c',z:'START -> BIT0',h:'569070',c:'g'}
+,{cr:'c',s:'1',z:'BIT0',h:'569070',c:'g'}
+,{cr:'c',z:'BIT0 -> BIT1',h:'569070',c:'g'}
 ,{cr:'m',z:'BIT0 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT1',h:'1690',c:'g'}
-,{cr:'c',z:'BIT1 -> BIT2',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT1',h:'569070',c:'g'}
+,{cr:'c',z:'BIT1 -> BIT2',h:'569069',c:'g'}
 ,{cr:'m',z:'BIT1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT2',h:'1690',c:'g'}
-,{cr:'c',z:'BIT2 -> BIT3',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT2',h:'569069',c:'g'}
+,{cr:'c',z:'BIT2 -> BIT3',h:'569067',c:'g'}
 ,{cr:'m',z:'BIT2 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT3',h:'1690',c:'g'}
-,{cr:'c',z:'BIT3 -> BIT4',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'BIT3',h:'569067',c:'g'}
+,{cr:'c',z:'BIT3 -> BIT4',h:'569067',c:'g'}
 ,{cr:'m',z:'BIT3 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT4',h:'1690',c:'g'}
-,{cr:'c',z:'BIT4 -> STOP1',h:'1466',c:'g'}
-,{cr:'c',z:'BIT4 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT4 -> BIT5',h:'192',c:'g'}
+,{cr:'c',s:'1',z:'BIT4',h:'569067',c:'g'}
+,{cr:'c',z:'BIT4 -> STOP1',h:'260887',c:'g'}
+,{cr:'c',z:'BIT4 -> PARITY',h:'42502',c:'g'}
+,{cr:'c',z:'BIT4 -> BIT5',h:'265676',c:'g'}
 ,{cr:'m',z:'BIT4 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP1',h:'1690',c:'g'}
-,{cr:'c',z:'STOP1 -> STOP2',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'STOP1',h:'569019',c:'g'}
+,{cr:'c',z:'STOP1 -> STOP2',h:'568969',c:'g'}
 ,{cr:'m',z:'STOP1 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'PARITY',h:'128',c:'g'}
-,{cr:'c',z:'PARITY -> STOP1',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'PARITY',h:'176014',c:'g'}
+,{cr:'c',z:'PARITY -> STOP1',h:'176013',c:'g'}
 ,{cr:'m',z:'PARITY -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT5',h:'192',c:'g'}
-,{cr:'c',z:'BIT5 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT5 -> BIT6',h:'128',c:'g'}
+,{cr:'c',s:'1',z:'BIT5',h:'265676',c:'g'}
+,{cr:'c',z:'BIT5 -> STOP1',h:'44209',c:'g'}
+,{cr:'c',z:'BIT5 -> PARITY',h:'45913',c:'g'}
+,{cr:'c',z:'BIT5 -> BIT6',h:'175509',c:'g'}
 ,{cr:'m',z:'BIT5 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT6',h:'128',c:'g'}
-,{cr:'c',z:'BIT6 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> PARITY',h:'32',c:'g'}
-,{cr:'c',z:'BIT6 -> BIT7',h:'64',c:'g'}
+,{cr:'c',s:'1',z:'BIT6',h:'175509',c:'g'}
+,{cr:'c',z:'BIT6 -> STOP1',h:'43725',c:'g'}
+,{cr:'c',z:'BIT6 -> PARITY',h:'45143',c:'g'}
+,{cr:'c',z:'BIT6 -> BIT7',h:'86641',c:'g'}
 ,{cr:'m',z:'BIT6 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'BIT7',h:'64',c:'g'}
-,{cr:'c',z:'BIT7 -> STOP1',h:'32',c:'g'}
-,{cr:'c',z:'BIT7 -> PARITY',h:'32',c:'g'}
+,{cr:'c',s:'1',z:'BIT7',h:'86641',c:'g'}
+,{cr:'c',z:'BIT7 -> STOP1',h:'44185',c:'g'}
+,{cr:'c',z:'BIT7 -> PARITY',h:'42456',c:'g'}
 ,{cr:'m',z:'BIT7 -> IDLE',h:'0',c:'r'}
-,{cr:'c',s:'1',z:'STOP2',h:'1690',c:'g'}
-,{cr:'c',z:'STOP2 -> IDLE',h:'1690',c:'g'}
+,{cr:'c',s:'1',z:'STOP2',h:'568969',c:'g'}
+,{cr:'c',z:'STOP2 -> IDLE',h:'568969',c:'g'}
 ]}
 
 ],

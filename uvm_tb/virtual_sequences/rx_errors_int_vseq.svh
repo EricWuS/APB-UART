@@ -37,18 +37,21 @@ task body;
   bit[7:0] lcr;
   bit[15:0] divisor;
   bit[1:0] fcr;
+  // bit[3:0] ier;
 
   lcr = 0;
   divisor = 2;
+  // ier = 1;
 
   rx_serial.no_rx_chars = 2;
-  rx_serial.no_errors = 1;     // 将 0 改为 1，注入错误，开启错误帧检测。
+  rx_serial.no_errors = 0;     // 将 1 改为 0，注入dist关键字约束的错误出现概率，开启错误帧检测。
 
-  repeat(64) begin
+  repeat(128) begin
     assert(setup.randomize() with {setup.LCR == lcr;
                                    setup.DIV == divisor;});
     setup.start(apb);
-    ien.IER = 4'h7;    // 失能modem 中断，开启其他中断方式，相较于poll format int 的检测，多检测 pe, fe等错误。
+    ien.IER = 4'b1111;    // 失能modem 中断，开启其他中断方式，相较于poll format int 的检测，多检测 pe, fe等错误。
+    // assert(ien.randomize() with {ien.IER == ier;});  // 随机化IER，使得可以获得更多的中断使能不同类型组合
     ien.start(apb);
     rx_serial.baud_divisor = divisor;
     rx_serial.lcr = lcr;
@@ -57,7 +60,7 @@ task body;
     tx_uart_config.baud_divisor = divisor;
     tx_uart_config.lcr = lcr;
 
-    assert(isr.randomize() with {no_tx_chars inside {[1:20]};});
+    assert(isr.randomize() with {isr.no_tx_chars inside {[1:20]};});
     isr.FCR = setup.FCR;
     case(setup.FCR)
       2'b00: isr.no_rx_chars = $urandom_range(2, 10);
@@ -84,7 +87,8 @@ task body;
       rx_serial.start(uart);
     join
     wait_empty.start(apb);
-    lcr++;
+    lcr = lcr + 1;
+    // ier = ier + 1;
   end
 
 endtask: body

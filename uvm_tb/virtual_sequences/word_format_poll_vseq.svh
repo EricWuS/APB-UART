@@ -34,26 +34,30 @@ class word_format_poll_vseq extends uart_vseq_base;
     bit[7:0] lcr;
     bit[15:0] divisor;
     bit[1:0] fcr;  
-    bit [7:0] i;
+    // bit [7:0] i;
     lcr = 0;
     divisor = 2;
 
-    host_rx.no_rx_chars = 2;
-    host_tx.no_tx_chars = 2;
-    rx_serial.no_rx_chars = 2;
+    host_rx.no_rx_chars = 20;
+    host_tx.no_tx_chars = 20;
+    rx_serial.no_rx_chars = 20;
     // rx_serial.no_errors = 1;
     rx_serial.no_errors = 0;
-    i = 0;
-    repeat(64) begin
+    // i = 0;
+    repeat(3) begin
       assert(setup.randomize() with {setup.LCR == lcr;
-                                    setup.DIV == divisor;});
+                                    setup.DIV == divisor;
+                                    setup.FCR == 2'b01;});
       setup.start(apb);
       rx_serial.baud_divisor = divisor;
       rx_serial.lcr = lcr;
       rx_uart_config.baud_divisor = divisor;
       rx_uart_config.lcr = lcr;
-      tx_uart_config.baud_divisor = divisor;
+      tx_uart_config.baud_divisor = divisor * 10;
       tx_uart_config.lcr = lcr;
+
+      $display("rx_uart_config.baud_divisor = ", rx_uart_config.baud_divisor);
+      $display("tx_uart_config.baud_divisor = ", tx_uart_config.baud_divisor);
 
       fork
         host_rx.start(apb);     // apb端口检测数据内容data
@@ -61,10 +65,10 @@ class word_format_poll_vseq extends uart_vseq_base;
         rx_serial.start(uart);   // UART端检测pe,fe,sbe等
       join
       lcr = lcr + 1;  // setup.LCR-定义的位数为[5:0] 最大值max= 6'b111111 = 63
-      i++;
-      if (i > 50) begin
-        rx_serial.no_errors = 1;
-      end
+      // i++;
+      // if (i > 50) begin
+      //   rx_serial.no_errors = 1;
+      // end
     end
 
   endtask: body

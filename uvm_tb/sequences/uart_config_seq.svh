@@ -21,7 +21,7 @@ class uart_config_seq extends host_if_base_seq;
 
   `uvm_object_utils(uart_config_seq)
 
-  rand bit[5:0] LCR;
+  rand bit[6:0] LCR;
   rand bit[15:0] DIV;
   rand bit[1:0] FCR; // Define the Receiver FIFO Interrupt trigger level
                     // ‘00’ – 1 byte

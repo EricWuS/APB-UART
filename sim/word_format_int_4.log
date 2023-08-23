@@ -1,0 +1,958 @@
+# vsim -sv_seed random uart_tb "+UVM_TESTNAME=word_format_int_test" -do "coverage save word_format_int_4.ucdb -onexit; run -all" -l word_format_int_4.log -c -coverage 
+# Start time: 16:49:54 on Aug 21,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.modem_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_reg_pkg(fast)
+# Loading work.modem_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.host_if_seq_pkg(fast)
+# Loading work.uart_vseq_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.serial_if(fast)
+# Loading work.interrupt_if(fast)
+# Loading work.uart_tb(fast)
+# Loading work.uart_16550(fast)
+# Loading work.apb_monitor(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/icTools/qsim10.6setupFiles/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 2307175950
+# coverage save word_format_int_4.ucdb -onexit
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test word_format_int_test...
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 70475: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 1.
+#    Time: 70525 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 72690: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 72815: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 2.
+#    Time: 72865 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 75575: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 3.
+#    Time: 75625 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 78055: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 4.
+#    Time: 78985 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 89385: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 89390: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 89435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 89535: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 101385: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 101435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 101535: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 5.
+#    Time: 126115 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 126165: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 332665: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:7
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 592640: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 592785: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:c
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 7.
+#    Time: 592835 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 738905: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:10
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 916625: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:15
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 947555: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:16
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 8.
+#    Time: 947605 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 952935: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:16
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 952985: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 959155: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:16
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 965470: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 968385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 976505: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:17
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1066640: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1071415: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:1a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1336635: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1336685: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1346575: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1346625: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1346675: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1354515: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:21
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1686895: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:28
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 9.
+#    Time: 1687505 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1700205: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1700255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:2f LCR:29
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1700305: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1700305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:1c LCR:29
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1700355: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1700355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:28 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1700405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1703395: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1703395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:28 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 1703445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1703445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:1 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1706715: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1706715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:28 LCR:29
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 1706765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1706765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:1 actual:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1710850: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1717650: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1720505: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1720505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:30 LCR:2a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1720555: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1720555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6c actual:b LCR:2a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1720605: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1720605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:71 actual:55 LCR:2a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1720655: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1720655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:75 actual:37 LCR:2a
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1721750: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1728970: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1734225: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1734225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:6c LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1734275: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:6e LCR:2a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1734325: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1734325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5f actual:59 LCR:2a
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1734375: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1734375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:64 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1734425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1737695: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1737695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:22 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1737745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 1738790: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1741155: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1741155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3a actual:74 LCR:2a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 1741205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 1741205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1760835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7f actual:93 LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1760885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:93 actual:5c LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1760935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5c actual:1a LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1760985: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:fc LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1803125: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:fc actual:b4 LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1803225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b4 actual:25 LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1803325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:1c LCR:2b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1821425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:13 LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1821475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:e LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1821525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:1d LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1821575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:1b LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1832865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:1 LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1832915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:18 LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1832965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:10 LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1833015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:18 LCR:2c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1879475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:29 LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1879575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:2f LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1879625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2f actual:1d LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1882805: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:1 LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1886125: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:2e LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1889305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:2b LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 1892765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:3c LCR:2d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1907915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:2b LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1907965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:5a LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1908015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5a actual:5c LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1908065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5c actual:78 LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1923215: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:78 actual:5a LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1923265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5a actual:45 LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1923315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:45 actual:2b LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1923365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:29 LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1927105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:11 LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 1930845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:30 LCR:2e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1947495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:da LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1947545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:da actual:a4 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1947595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a4 actual:5c LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1947645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5c actual:86 LCR:2f
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 1963515: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1963515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:86 actual:44 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1963565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:44 actual:9a LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1963615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9a actual:d5 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1963665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d5 actual:dc LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1967545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:dc actual:ed LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1971705: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ed actual:e4 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1975725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e4 actual:f4 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 1979605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f4 actual:32 LCR:2f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1999675: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:18 LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1999725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:1d LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 1999775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:1 LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2002025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:1b LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2004365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:13 LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2009465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:16 LCR:30
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2020495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:c LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2020545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:1 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2020595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:27 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2020645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:3b LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2031555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:18 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2031605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:34 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2031655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:34 actual:25 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2031705: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:e LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2034465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:12 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2037085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:30 LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2039845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:3b LCR:31
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2061085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:65 LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2061135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:65 actual:70 LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2061185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:70 actual:28 LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2061235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:28 actual:39 LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2095775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:39 actual:7d LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2095875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7d actual:41 LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2095975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:5e LCR:32
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2121475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5e actual:61 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2121525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:61 actual:21 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2121575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:21 actual:82 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2121625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:82 actual:b8 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2135015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b8 actual:8e LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2135065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8e actual:ce LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2135115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ce actual:7f LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2135165: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7f actual:bf LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2138485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:bf actual:41 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2141805: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:a6 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2145265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a6 actual:d6 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2148725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d6 actual:b0 LCR:33
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2151445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:13 LCR:34
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2154065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:19 LCR:34
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2156685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:18 LCR:34
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2159305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:1b LCR:34
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2192615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:39 LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2192665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:39 actual:25 LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2192715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:2c LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2192765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2c actual:14 LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2195945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:23 LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2199265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:38 LCR:35
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2223315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:38 actual:a LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2223365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:3b LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2223415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:57 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2223465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:57 actual:65 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2236815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:65 actual:24 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2236865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:24 actual:18 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2236915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:5f LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2236965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5f actual:79 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2240285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:79 actual:30 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2243745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:54 LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2246925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:54 actual:4d LCR:36
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2262295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4d actual:f6 LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2262345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f6 actual:9d LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2262395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9d actual:b1 LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2262445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b1 actual:6f LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2266045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6f actual:84 LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2269785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:84 actual:4 LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2273385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:bb LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2276985: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:bb actual:b LCR:37
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2280515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:17 LCR:38
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2283415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:d LCR:38
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2286315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:3 LCR:38
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2288935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:7 LCR:38
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2303175: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:e LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2303225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:12 LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2303275: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:2e LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2303325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:14 LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2306365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:10 LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2309405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:37 LCR:39
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2353995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:1a LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2354045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:6c LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2354095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6c actual:17 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2354145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:58 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2367695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:58 actual:53 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2367745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:53 actual:2d LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2367795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:23 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2367845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:67 LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2371305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:67 actual:7b LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2374625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7b actual:a LCR:3a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2407145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:4 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2407195: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:70 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2407245: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:70 actual:d1 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2407295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d1 actual:24 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2422225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:24 actual:1d LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2422275: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:37 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2422325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:42 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2422375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:42 actual:d1 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2426255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d1 actual:74 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2429995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:74 actual:65 LCR:3b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2443005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:1b LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2443055: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:3 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2443105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:1 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2443155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:18 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2454545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:a LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2454595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:19 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2454645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:15 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2454695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:16 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2457455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:19 LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2460215: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:1e LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2463115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1e actual:f LCR:3c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2476945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:e LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2476995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:16 LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2477045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:4 LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2477095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:1d LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2490245: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:22 LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2490295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:22 actual:19 LCR:3d
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2490345: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2490345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:2e LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2490395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:13 LCR:3d
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 10.
+#    Time: 2490445 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2490445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2493015: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2493015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:31 LCR:3d
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 11.
+#    Time: 2495685 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2509945: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2509945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:31 actual:a LCR:3e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2509995: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2509995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:2d LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2510045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:7c LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2510095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7c actual:25 LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2513695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:64 LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2517295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:64 actual:4a LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2520895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4a actual:6c LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2524635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6c actual:3a LCR:3e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2540785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3a actual:2b LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2540835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:ec LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2540885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ec actual:7c LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2540935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7c actual:cd LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2545095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:cd actual:85 LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2549115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:85 actual:82 LCR:3f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2579105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:17 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2579155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:19 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2579205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:c LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2579255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:d LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2588785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:13 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2588835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:f LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2588885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:e LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2588935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:12 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2591415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:7 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2593895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:4 LCR:40
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2614355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:13 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2614405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:d LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2614455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:3c LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2614505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:9 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2647585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:5 LCR:41
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2658685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:1c LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2661165: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:78 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2664205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:78 actual:7a LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2667525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7a actual:25 LCR:42
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2703655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:42 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2703705: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:42 actual:84 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2703755: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:84 actual:1d LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2703805: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:52 LCR:43
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 2714060: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2717875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:52 actual:82 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2717925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:82 actual:9e LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2717975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9e actual:3d LCR:43
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2718025: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2718025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:6b LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2718075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2721345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6b actual:9b LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2724945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9b actual:58 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2728265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:58 actual:a5 LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2731725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a5 actual:1f LCR:43
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2743575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:1e LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2743625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1e actual:3 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2743675: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:13 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2743725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:1 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2754185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:15 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2754235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:8 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2754285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:19 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2756765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:6 LCR:44
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2768595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:1 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2768645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:10 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2768695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:23 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2768745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:11 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2780955: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:5 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2781005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:3d LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2781055: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:10 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2781105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:23 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2784145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:8 LCR:45
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2798815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:1c LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2798865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:1f LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2798915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:41 LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2798965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:3 LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2811115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:65 LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2811165: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:65 actual:33 LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2811215: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:33 actual:6f LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2811265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6f actual:3b LCR:46
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 12.
+#    Time: 2811315 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2811315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2813885: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2813885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:7d LCR:46
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 2820775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2827895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7d actual:43 LCR:47
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2827945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:43 actual:35 LCR:47
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2827995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:35 actual:d6 LCR:47
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2828045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d6 actual:f3 LCR:47
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2831645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f3 actual:bc LCR:47
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2845395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:19 LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2845445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:14 LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2845495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:16 LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2845545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:1b LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2848445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:e LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2851065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:c LCR:48
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 13.
+#    Time: 2851115 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 2851115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2853825: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2853825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:b LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 2853875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 2856725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:d LCR:48
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2868575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:1a LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2868625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:12 LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2868675: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:8 LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2868725: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:7 LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2871905: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:2d LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2875225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:19 LCR:49
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 14.
+#    Time: 2875275 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 2875275: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 2878265: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2878265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:21 LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 2878315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 2881585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:21 actual:e LCR:49
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2916455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:5 LCR:4a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2916505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:3e LCR:4a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2916555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3e actual:72 LCR:4a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2916605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:72 actual:73 LCR:4a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 2961255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:73 actual:3b LCR:4a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2984745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:74 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2984795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:74 actual:3f LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2984845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3f actual:a3 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2984895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a3 actual:ed LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2999325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ed actual:36 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2999375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:36 actual:57 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2999425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:57 actual:d3 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 2999475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d3 actual:f6 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3003215: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f6 actual:88 LCR:4b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3016365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:1f LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3016415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:11 LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3016465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:d LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3016515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:6 LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3028285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:9 LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3028335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:6 LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3028385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:15 LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3028435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:b LCR:4c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3075435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:14 LCR:4d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3075485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:c LCR:4d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3075535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:2d LCR:4d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3075585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:33 LCR:4d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3120935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:33 actual:1a LCR:4d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3144285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:3a LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3144335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3a actual:d LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3144385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:5e LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3144435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5e actual:6b LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3148175: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6b actual:1d LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3151775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:29 LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3155655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:74 LCR:4e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3171385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:74 actual:4f LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3171485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4f actual:81 LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3171535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:81 actual:41 LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3187965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:8b LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3188065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8b actual:3f LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3188115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3f actual:d5 LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3192135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d5 actual:28 LCR:4f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3205445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:13 LCR:50
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3205495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:15 LCR:50
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3205545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:2 LCR:50
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3205595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:16 LCR:50
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3208075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:1d LCR:50
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3236465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:14 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3236515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:17 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3236565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:5 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3236615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:38 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3247565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:38 actual:27 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3247615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:8 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3247665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:13 LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3247715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:1a LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3250615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:3c LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3253375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:1c LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3256275: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:2c LCR:51
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3268205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2c actual:23 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3268255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:23 actual:25 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3268305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:57 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3268355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:57 actual:67 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3280485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:67 actual:32 LCR:52
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3280535: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3280535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:32 actual:39 LCR:52
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3280585: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3280585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:39 actual:75 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3280635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:75 actual:70 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3283535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:70 actual:9 LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3286575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:b LCR:52
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3315545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:64 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3315595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:64 actual:38 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3315645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:38 actual:81 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3315695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:81 actual:4a LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3329565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4a actual:25 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3329615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:27 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3329665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:ec LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3329715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ec actual:db LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3343145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:db actual:a5 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3343195: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a5 actual:3c LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3343245: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:a7 LCR:53
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3375445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:1b LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3375495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:13 LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3375545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:9 LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3375595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:11 LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3378355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:13 LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3381115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:7 LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3383735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:b LCR:54
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3420335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:16 LCR:55
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3420385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:4 LCR:55
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3420435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:12 LCR:55
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3420485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:c LCR:55
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3423525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:22 LCR:55
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3459295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:22 actual:3d LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3459345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:1c LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3459395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:c LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3459445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:67 LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3462905: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:67 actual:35 LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3466225: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:35 actual:3f LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3469825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3f actual:25 LCR:56
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3489415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:27 LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3489465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:32 LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3489515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:32 actual:5d LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3489565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5d actual:cb LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3493305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:cb actual:11 LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3496905: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:3d LCR:57
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3526965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:14 LCR:58
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3527015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:18 LCR:58
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3527065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:8 LCR:58
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3527115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:1 LCR:58
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3563235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:8 LCR:58
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3579715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:e LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3579765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:5 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3579815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:4 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3579865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:29 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3591635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:9 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3591685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:19 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3591735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:22 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3591785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:22 actual:32 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3594825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:32 actual:7 LCR:59
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3608005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:35 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3608055: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:35 actual:f LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3608105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:45 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3611425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:45 actual:65 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3614885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:65 actual:51 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3618345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:51 actual:21 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3621945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:21 actual:37 LCR:5a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3636315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:1d LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3636365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:48 LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3636415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:48 actual:4d LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3636465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4d actual:49 LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3640205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:49 actual:8b LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3644085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8b actual:d3 LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3647685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d3 actual:2a LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3651285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2a actual:47 LCR:5b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3664595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:4 LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3664645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:19 LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3664695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:b LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3664745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:1c LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3676235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:4 LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3676285: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:9 LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3676335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:d LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3676385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:c LCR:5c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3718005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:4 LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3718055: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:1d LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3718105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:28 LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3718155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:28 actual:b LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3731665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:1b LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3731715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:2f LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3731765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2f actual:10 LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3731815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:1f LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3735135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:e LCR:5d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3749745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:d LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3749795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:37 LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3749845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:4c LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3749895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4c actual:3c LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3753495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:6d LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3757235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6d actual:35 LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3760835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:35 actual:28 LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3764575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:28 actual:7a LCR:5e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3785865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7a actual:4 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3785915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:29 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3785965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:ec LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3786015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ec actual:e5 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3802025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e5 actual:43 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3802075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:43 actual:b7 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3802125: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b7 actual:b3 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3802175: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b3 actual:b9 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3806335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b9 actual:a5 LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3810215: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a5 actual:2b LCR:5f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3822205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:19 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3822255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:7 LCR:60
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3822305: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3822305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:1d LCR:60
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3822355: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3822355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:4 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3831925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:9 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3831975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:a LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3832025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:12 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3832075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:1f LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3834415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:19 LCR:60
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3844405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:17 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3844455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:19 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3844505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:15 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3844555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:6 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3855425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:9 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3855475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:26 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3855575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:26 actual:1a LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3858475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:29 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3861095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:1b LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3863995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:14 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3866755: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:17 LCR:61
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3878085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:2c LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3878135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2c actual:5 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3878185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5 actual:22 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3878235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:22 actual:4 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3890305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:5a LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3890355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5a actual:9 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3890405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:51 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3890455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:51 actual:19 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3893635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:19 actual:7b LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3896815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7b actual:22 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3899995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:22 actual:51 LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 3902895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:51 actual:d LCR:62
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3919535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:39 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3919585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:39 actual:57 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3919635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:57 actual:6e LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3919685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6e actual:43 LCR:63
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 3932260: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3932295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:43 actual:6c LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3932345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6c actual:82 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3932395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:82 actual:3d LCR:63
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3932445: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3932445: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:fa LCR:63
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 15.
+#    Time: 3932495 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 3936745: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 3936745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:fa actual:81 LCR:63
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 3947035: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3949695: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:f LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3949745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:1c LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3949795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:13 LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3949845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:11 LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3960255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:1a LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3960305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:1c LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3960355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:1a LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3960405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:1d LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3970735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:f LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3970785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:18 LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3970835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:e LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 3970885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:f LCR:64
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3997195: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:4 LCR:65
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3997295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:1d LCR:65
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3997395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:1b LCR:65
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 3999595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:1c LCR:65
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4012955: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:1d LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4013005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:2e LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4013055: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:6 LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4013105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:29 LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4026795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:f LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4026845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:d LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4026895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:39 LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4026945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:39 actual:7b LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4040115: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7b actual:5b LCR:66
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4081105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5b actual:6a LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4081155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6a actual:5e LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4081205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:5e actual:62 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4081255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:62 actual:f2 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4095665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f2 actual:d2 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4095715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d2 actual:2e LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4095765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:f LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4095815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:4 LCR:67
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 4099270: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4099415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:55 LCR:67
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 16.
+#    Time: 4099465 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4099465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4103435: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4103435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:55 actual:d1 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4103485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4107035: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d1 actual:a1 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4110635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a1 actual:93 LCR:67
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4131565: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:1b LCR:68
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4131615: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:15 LCR:68
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4131665: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:68
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4131665: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:17 LCR:68
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4131715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:1e LCR:68
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4157805: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3e actual:15 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4157855: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:6 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4157905: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:a LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4157955: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:6 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4170265: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:10 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4170315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:26 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4170365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:26 actual:2e LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4170415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:30 LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4173455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:c LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4176635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:f LCR:69
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4204635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:2f LCR:6a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4204685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2f actual:3c LCR:6a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4204735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:26 LCR:6a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4204785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:26 actual:d LCR:6a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4253385: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:4d LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4253435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4d actual:6a LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4253485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6a actual:7f LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4253535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7f actual:3 LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4268485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:90 LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4268535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:90 actual:e9 LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4268585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e9 actual:bc LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4268635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:bc actual:7e LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4283365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7e actual:1e LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4283415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1e actual:d0 LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4283465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d0 actual:2e LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4283515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:2c LCR:6b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4336245: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:8 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4336295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:14 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4336395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:b LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4348085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:16 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4348135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:13 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4348185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:11 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4348235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:14 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4351135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:10 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4354315: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:4 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4357355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:9 LCR:6c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4360255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:16 LCR:6c
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 17.
+#    Time: 4360585 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4360585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_WARNING ../agents/uart_agent/uart_monitor.svh(95) @ 4372370: uvm_test_top.m_env.m_rx_uart_agent.m_uart_monitor [startBitErrorDetect] False start bit detected
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4372485: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4372485: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:27 LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4372535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:f LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4372585: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f actual:1e LCR:6d
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4372635: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:6d
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 18.
+#    Time: 4372685 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4377775: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4377775: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1e actual:3f LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 4377825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4377825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4381235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3f actual:3b LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4384415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:28 LCR:6d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4421375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:28 actual:29 LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4421425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:29 actual:62 LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4421475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:62 actual:3 LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4421525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:10 LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4424985: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:10 actual:4c LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4428865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4c actual:7a LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4432745: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7a actual:34 LCR:6e
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 19.
+#    Time: 4432795 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 4432795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4436345: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4436345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:34 actual:2d LCR:6e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 4436635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:1 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4452455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:2b LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4452505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:a9 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4452555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a9 actual:45 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4452605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:45 actual:25 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4468835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:48 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4468885: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:48 actual:9b LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4468935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9b actual:ba LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4468985: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ba actual:64 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4473145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:64 actual:d4 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4477025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d4 actual:9e LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4481185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9e actual:57 LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4485345: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:57 actual:fb LCR:6f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4505355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:4 LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4505405: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4 actual:a LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4505455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:6 LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4505505: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:2 LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4531915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:9 LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4532015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:1f LCR:70
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4553765: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:3d LCR:71
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4553815: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3d actual:21 LCR:71
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4553865: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:71
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4553865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:21 actual:23 LCR:71
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4553915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:7 actual:e LCR:71
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4609915: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4609915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:b LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4609965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:4b LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4610015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4b actual:4d LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4610065: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:4d actual:2d LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4622475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:41 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4622525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:65 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4622575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:65 actual:35 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4622625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:35 actual:63 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4634495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:63 actual:c LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4634545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:2a LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4634595: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2a actual:50 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4634645: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:50 actual:38 LCR:72
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4664205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:38 actual:44 LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4664255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:44 actual:75 LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4664305: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:75 actual:9a LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4664355: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9a actual:16 LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4677925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:ba LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4677975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ba actual:41 LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4678025: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:41 actual:1b LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4678075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:2f LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4681395: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2f actual:af LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4684715: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:af actual:17 LCR:73
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4695085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:c LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4695135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:b LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4695185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:9 LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4695235: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9 actual:8 LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4705685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:1 LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4705735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1 actual:1b LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4705785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:1f LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4705835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:16 LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4708455: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:1f LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4711075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:8 LCR:74
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4714495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:25 LCR:75
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4717535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:25 actual:1d LCR:75
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4720155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:37 LCR:75
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 20.
+#    Time: 4720205 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4720205: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4722495: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:75
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4722495: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:1d LCR:75
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4724845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 4761895: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:76
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4761895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1d actual:36 LCR:76
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 4761945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:0
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4764375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:36 actual:1b LCR:76
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4767835: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:38 LCR:76
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4771015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:38 actual:37 LCR:76
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4804865: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:51 LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4804915: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:51 actual:cb LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4804965: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:cb actual:b LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4805015: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:b3 LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4819945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b3 actual:6 LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4819995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:6 actual:2f LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4820045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2f actual:94 LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4820095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:94 actual:87 LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4823975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:87 actual:9f LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 4827435: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:9f actual:ac LCR:77
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4859375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:8 LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4859425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:1f LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4859475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:17 LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4859525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:17 actual:e LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4870475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e actual:c LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4870525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c actual:1b LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4870575: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:18 LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 4870625: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:b LCR:78
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4910035: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:b actual:a LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4910085: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:26 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4910135: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:26 actual:d LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4910185: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:d actual:27 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4921795: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:27 actual:2 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4921845: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:12 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4921895: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:12 actual:32 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4921945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:32 actual:2a LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4933995: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2a actual:8 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4934045: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:34 LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4934095: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:34 actual:3a LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 4934145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3a actual:1b LCR:79
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4972005: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:37 LCR:7a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4972105: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:3c LCR:7a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4972155: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:31 LCR:7a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4975335: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:31 actual:14 LCR:7a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 4978935: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:14 actual:79 LCR:7a
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5008375: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:79 actual:a LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5008425: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:e2 LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5008475: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:e2 actual:c7 LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5008525: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:c7 actual:2b LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5022655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2b actual:51 LCR:7b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5022705: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:0 FE:1 LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5022705: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:51 actual:ed LCR:7b
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5022755: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5022755: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:ed actual:3b LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5022805: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:bb LCR:7b
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 21.
+#    Time: 5022855 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(129) @ 5022855: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR PE bit - expected:0 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5026545: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7b
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5026545: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:bb actual:d1 LCR:7b
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 22.
+#    Time: 5030875 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 5030875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:1 actual:1
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5063825: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:1 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5063825: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:2 LCR:7c
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5063875: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5063875: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2 actual:1e LCR:7c
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5063925: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5063925: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1e actual:1f LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5063975: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:18 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5066735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:18 actual:3 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5069635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:11 LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5072535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:a LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(100) @ 5075295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:a actual:1a LCR:7c
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5088145: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1a actual:16 LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5088195: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:16 actual:8 LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5088245: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:8 actual:3 LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5088295: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3 actual:1f LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5091755: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1f actual:2d LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5095075: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2d actual:11 LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(106) @ 5098255: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:11 actual:3c LCR:7d
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5134635: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3c actual:1b LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5134685: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1b actual:2e LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5134735: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:2e actual:52 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5134785: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:52 actual:78 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5149555: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:78 actual:55 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5149605: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:55 actual:1c LCR:7e
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(93) @ 5149655: uvm_test_top.m_env.rx_sb [monitor_uart] RX Data error detected: PE:1 FE:0 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5149655: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:1c actual:3b LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5149705: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:3b actual:37 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(112) @ 5184325: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:37 actual:30 LCR:7e
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5199365: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:30 actual:28 LCR:7f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5199415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:28 actual:44 LCR:7f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5199465: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:44 actual:15 LCR:7f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5199515: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:15 actual:f1 LCR:7f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5203535: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:f1 actual:13 LCR:7f
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(118) @ 5207415: uvm_test_top.m_env.rx_sb [monitor_uart] Error in observed UART RX data expected:13 actual:46 LCR:7f
+# ** Error: (vsim-8567) Illegal cross bin was hit. The bin counter for the bin 'lsr_read_cg.FIFO_ERROR_STATUS.missing_fifo_error' is 23.
+#    Time: 5215945 ns  Iteration: 1  Region: /uvm_pkg::uvm_task_phase::execute
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(133) @ 5215945: uvm_test_top.m_env.rx_sb [monitor_uart] Error in LSR FE bit - expected:0 actual:1
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 5215945: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 5215945: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
+# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 5215945: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(159) @ 5215945: uvm_test_top.m_env.rx_sb [report_phase] 33 characters received with undetected errors from 1035 received overall
+# UVM_ERROR ../uvm_tb/env/uart_rx_scoreboard.svh(162) @ 5215945: uvm_test_top.m_env.rx_sb [report_phase] 702 characters received with data_errors from 1035 received overall
+# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 5215945: uvm_test_top.m_env.tx_sb [report_phase] 1526 characters transmitted from the UART with no errors
+# UVM_ERROR ../uvm_tb/tests/word_format_int_test.svh(48) @ 5215945: uvm_test_top [*** UVM TEST FAILED ***] RX or TX data errors detected - see scoreboard reports for more detail
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   80
+# UVM_WARNING :   14
+# UVM_ERROR :  738
+# UVM_FATAL :    0
+# ** Report counts by id
+# [*** UVM TEST FAILED ***]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [monitor_uart]   808
+# [report_phase]     4
+# [startBitErrorDetect]    14
+# [uart_modem_scoreboard::report_phase]     1
+# ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 5215945 ns  Iteration: 67  Instance: /uart_tb
+# Saving coverage database on exit...
+# End time: 16:50:20 on Aug 21,2023, Elapsed time: 0:00:26
+# Errors: 22, Warnings: 0
