@@ -1,5 +1,5 @@
 # vsim -sv_seed random uart_tb "+UVM_TESTNAME=word_format_poll_test" -do "coverage save word_format_poll_1.ucdb -onexit;run -all" -c -l word_format_poll_1.log -coverage -voptargs="+acc" 
-# Start time: 17:47:03 on Aug 23,2023
+# Start time: 21:19:50 on Aug 30,2023
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 10.6c win64 Jul 26 2017
@@ -44,7 +44,7 @@
 # Loading work.apb_monitor(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading D:/icTools/qsim10.6setupFiles/uvm-1.1d\win64\uvm_dpi.dll
-# Sv_Seed = 3669684822
+# Sv_Seed = 3681057958
 # coverage save word_format_poll_1.ucdb -onexit
 # run -all
 # ----------------------------------------------------------------
@@ -72,16 +72,12 @@
 # UVM_INFO @ 0: reporter [RNTST] Running test word_format_poll_test...
 # rx_uart_config.baud_divisor =     2
 # tx_uart_config.baud_divisor =    20
-# rx_uart_config.baud_divisor =     2
-# tx_uart_config.baud_divisor =    20
-# rx_uart_config.baud_divisor =     2
-# tx_uart_config.baud_divisor =    20
-# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 166235: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 166235: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
-# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 166235: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
-# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(156) @ 166235: uvm_test_top.m_env.rx_sb [report_phase] 60 characters received by the UART with 0 inserted errors
-# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 166235: uvm_test_top.m_env.tx_sb [report_phase] 60 characters transmitted from the UART with no errors
-# UVM_INFO ../uvm_tb/tests/word_format_poll_test.svh(45) @ 166235: uvm_test_top [*** UVM TEST PASSED ***] No RX or TX data errors detected
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 2725: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm_tb/env/baud_rate_checker.svh(144) @ 2725: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected
+# UVM_INFO ../uvm_tb/env/uart_modem_scoreboard.svh(207) @ 2725: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed
+# UVM_INFO ../uvm_tb/env/uart_rx_scoreboard.svh(156) @ 2725: uvm_test_top.m_env.rx_sb [report_phase] 1 characters received by the UART with 0 inserted errors
+# UVM_INFO ../uvm_tb/env/uart_tx_scoreboard.svh(134) @ 2725: uvm_test_top.m_env.tx_sb [report_phase] 1 characters transmitted from the UART with no errors
+# UVM_INFO ../uvm_tb/tests/word_format_poll_test.svh(45) @ 2725: uvm_test_top [*** UVM TEST PASSED ***] No RX or TX data errors detected
 # 
 # --- UVM Report Summary ---
 # 
@@ -98,7 +94,7 @@
 # [report_phase]     3
 # [uart_modem_scoreboard::report_phase]     1
 # ** Note: $finish    : D:/icTools/qsim10.6setupFiles/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 166235 ns  Iteration: 66  Instance: /uart_tb
+#    Time: 2725 ns  Iteration: 66  Instance: /uart_tb
 # Saving coverage database on exit...
-# End time: 17:47:12 on Aug 23,2023, Elapsed time: 0:00:09
+# End time: 21:20:05 on Aug 30,2023, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 0

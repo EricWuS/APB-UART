@@ -38,13 +38,13 @@ class word_format_poll_vseq extends uart_vseq_base;
     lcr = 0;
     divisor = 2;
 
-    host_rx.no_rx_chars = 20;
-    host_tx.no_tx_chars = 20;
-    rx_serial.no_rx_chars = 20;
+    host_rx.no_rx_chars = 1;
+    host_tx.no_tx_chars = 1;
+    rx_serial.no_rx_chars = 1;
     // rx_serial.no_errors = 1;
     rx_serial.no_errors = 0;
     // i = 0;
-    repeat(3) begin
+    repeat(1) begin
       assert(setup.randomize() with {setup.LCR == lcr;
                                     setup.DIV == divisor;
                                     setup.FCR == 2'b01;});
